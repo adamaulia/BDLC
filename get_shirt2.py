@@ -114,12 +114,13 @@ def main(filename_customer,filename_seller):
     fg = cv2.bitwise_and(crop_seller_resize,crop_seller_resize,mask = inv_crop_seller_resize_masking)
     
     final = cv2.add(bg,fg)
-    result = im_cust[coord_customer[1]:coord_customer[1]+coord_customer[3],coord_customer[0]:coord_customer[0]+coord_customer[2]] = final
+    result = im_cust.copy()
+    result[coord_customer[1]:coord_customer[1]+coord_customer[3],coord_customer[0]:coord_customer[0]+coord_customer[2]] = final
     cv2.imshow('',result)
     return result
 
 if __name__=='__main__':
-    image_seller = 'tes_image10.jpg'
+    image_seller = 'tes_image12.jpg'
     image_customer = 'tes_image7.jpg'
     main(image_customer,image_seller)
         
