@@ -114,7 +114,7 @@ def main(filename_customer,filename_seller):
     fg = cv2.bitwise_and(crop_seller_resize,crop_seller_resize,mask = inv_crop_seller_resize_masking)
     
     final = cv2.add(bg,fg)
-    result = im_cust[coord_customer[0]:coord_customer[0]+coord_customer[3],coord_customer[1]:coord_customer[1]+coord_customer[2]] = final
+    result = im_cust[coord_customer[1]:coord_customer[1]+coord_customer[3],coord_customer[0]:coord_customer[0]+coord_customer[2]] = final
     cv2.imshow('',result)
     return result
 
