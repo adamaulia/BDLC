@@ -1,6 +1,7 @@
 # BDLC
 BukaLapak API Chalengge 
-Title BukaBaju 
+Team : F201
+Title : Bukabaju
 
 Requirement 
 1. python 2.7
