@@ -120,7 +120,7 @@ def main(filename_customer,filename_seller):
     return result
 
 if __name__=='__main__':
-    image_seller = 'tes_image12.jpg'
-    image_customer = 'tes_image7.jpg'
+    image_seller = 'seller_accepted/tes_image10_5.jpg'
+    image_customer = 'customer_accepted/tes_image16.jpg'
     main(image_customer,image_seller)
         
